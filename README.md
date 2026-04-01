@@ -34,7 +34,7 @@ PawPal+ goes beyond a simple to-do list by implementing algorithmic scheduling f
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/ai110-module2show-pawpal-starter.git
+git clone https://github.com/lnsomniak/ai110-module2show-pawpal-starter.git
 cd ai110-module2show-pawpal-starter
 
 # Create and activate a virtual environment
@@ -103,7 +103,7 @@ The test suite (`tests/test_pawpal.py`) covers:
 ## Project Structure
 
 ```
-pawpal/
+ai110-module2show-pawpal-starter/
 |-- pawpal_system.py       # Core logic: Task, Pet, Owner, Scheduler classes
 |-- main.py                # CLI demo script
 |-- app.py                 # Streamlit web UI
@@ -166,17 +166,4 @@ classDiagram
     Owner "1" --> "*" Pet : owns
     Pet "1" --> "*" Task : has
     Scheduler --> Owner : schedules for
-```
-
----
-
-## Suggested Commit History
-
-```
-chore: add class skeletons from UML
-feat: implement core classes and demo script
-feat: implement sorting, filtering, and conflict detection
-test: add automated test suite for PawPal+ system
-feat: integrate backend with Streamlit UI
-docs: finalize README, UML, and reflection
 ```
